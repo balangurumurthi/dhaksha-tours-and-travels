@@ -1,0 +1,314 @@
+/* Global Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #212529;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  color: #212529;
+}
+
+.fs-small {
+    font-size: 0.75rem;
+}
+a {
+  color: #eb5d1e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6a3a;
+}
+
+/* Header */
+#main-header {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #eb5d1e;
+}
+
+.navbar-nav .nav-link {
+  color: #212529;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #eb5d1e;
+}
+
+/* Sections */
+.home-section {
+  background-color: #fffaf8;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.services-section {
+  background-color: #fffaf8;
+  padding: 60px 0;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+.footer {
+  background-color: #060606;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ff6a3a;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-section .info-wrap {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-section .info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-section .info-item i {
+  font-size: 24px;
+  color: #eb5d1e;
+  margin-right: 15px;
+}
+
+.contact-section .info-item h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-section iframe {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Pricing Section */
+.pricing-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.pricing-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.pricing-section .table {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.pricing-section .table th {
+  background-color: #eb5d1e;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+.pricing-section .table td {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+}
+
+.portfolio-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.portfolio-section .card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.portfolio-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-section .card img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-section .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.portfolio-section .card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* faq */
+/* FAQ Section */
+.faq-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.faq-section .accordion-button {
+  background-color: #f8f9fa;
+  color: black;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 5px 10px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: #eb5d1e;
+  color: #ffffff;
+}
+
+.faq-section .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-section .accordion-item {
+  border: none;
+  margin-bottom: 5px;
+}
+
+.faq-section .accordion-body {
+  background-color: #ffffff;
+  color: #555;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.faq-section .accordion-header button {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .faq-section .accordion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+#faqAccordionColumn1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#faqAccordionColumn2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* portfolio */
+
+#portfolio .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#portfolio .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#portfolio .card-subtitle {
+    font-size: 1rem;
+}
+#portfolio .car-image {
+    max-height: 150px;
+    object-fit: contain;
+}
+#portfolio .icon-row {
+    font-size: 1.2rem;
+}
+#portfolio .card-text {
+    margin-top: auto; /* Pushes the price to the bottom of the card */
+} 
+#portfolio .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+#portfolio .card:hover {
+    transform: translateY(-5px);
+}
+#portfolio .card-icon {
+    font-size: 2rem;
+    color: #c38756;
+}
+#portfolio .card-title {
+    color: #343a40;
+    font-weight: bold;
+}
+#portfolio .card-text {
+    color: #6c757d;
+}
