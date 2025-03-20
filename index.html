@@ -74,71 +74,86 @@
     <link href="https://www.maduraidhakshatoursandtravels.com/assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Header with Bootstrap Navbar -->
-    <header id="main-header" class="sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+
+    <!-- <div class="top-nav">
+      <div class="d-flex align-items-center flex-column ms-0 ms-md-3 flex-wrap align-content-start">
+        <a href="tel:9943783232" class="btn btn-primary">Call: 9943783232</a>
+      </div>
+    </div> -->
+    <header id="main-header" class="sticky-top"> 
+    <nav id="navbar" class="navbar navbar-expand-lg flex-column p-0">
+      <div class="top-bar d-flex flex-column flex-lg-row">
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:9943783232">9943783232</a>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:7708676041">7708676041</a>
+        </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:dhakshacabs23@gmail.com">dhakshacabs23@gmail.com</a>
+        </div>
+        <p class="m-0 fs-small text-white">GSTIN 33EFGPK1043J1ZO</p>
+      </div>
+      <div class="container-fluid">
+        <div class="logo-title">
           <a class="navbar-brand d-flex align-items-center" href="https://www.maduraidhakshatoursandtravels.com/">
-            <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/logo.png" alt="Madurai Dhaksha Tours And Travels Logo" height="70" class="me-2" />
-            <span class="fw-bold">Madurai Dhaksha Tours And Travels</span>
+            <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/logo-1.png" alt="Madurai Dhaksha Tours And Travels Logo" height="70" class="me-2" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link active" href="https://www.maduraidhakshatoursandtravels.com/#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#services">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#pricing">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#contact">Contact</a></li>
-            </ul>
-            <div class="d-flex align-items-center flex-column ms-0 ms-md-3 flex-wrap align-content-start">
-              <a href="tel:9943783232" class="btn btn-primary">Call: 9943783232</a>
-              <p class="m-0 fs-small">GSTIN:33EFGPK1043J1ZO</p>
-            </div>
+          <div class="d-flex flex-column">
+            <span class="fw-bold company">Madurai Dhaksha</span>
+            <span class="description"> Tours And Travels</span>            
           </div>
         </div>
-      </nav>
-    </header>
+        <button class="custom-toggler navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="https://www.maduraidhakshatoursandtravels.com/#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <!-- Home Section -->
     <main>
-      <section id="home" class="home-section py-5 text-center">
-        <div class="container">
-          <h1 class="display-5">Madurai's Best Car Tours and Travels</h1>
-          <p class="lead">Experience hassle-free travel with our premium services.</p>
-          <a href="tel:9943783232" class="btn btn-lg btn-success">Book Now</a>
-        </div>
+      <section id="home" class="home-section text-center">
+        <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/home.png" class="background-image" alt="Background" />
       </section>
 
       <!-- Services Section -->
-      <section id="services" class="services-section py-5 bg-white">
+      <section id="services" class="services-section pb-5 bg-white">
         <div class="container">
           <h2 class="text-center mb-5">Our Services</h2>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-12 col-md-3 py-3 py-md-0">
               <div class="card h-100 text-center p-4">
                 <i class="fas fa-car fs-1 mb-3"></i>
                 <h5>Car Rentals</h5>
                 <p>Wide selection of vehicles for all travel needs.</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-md-3 py-3 py-md-0">
               <div class="card h-100 text-center p-4">
                 <i class="fas fa-map-marked-alt fs-1 mb-3"></i>
                 <h5>Tour Packages</h5>
                 <p>Custom-curated tours for memorable journeys.</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-md-3 py-3 py-md-0">
               <div class="card h-100 text-center p-4">
                 <i class="fas fa-plane fs-1 mb-3"></i>
                 <h5>Airport Transfers</h5>
                 <p>On-time, professional airport pick-up and drop-off services.</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-md-3 py-3 py-md-0">
               <div class="card h-100 text-center p-4">
                 <i class="fas fa-suitcase fs-1 mb-3"></i>
                 <h5>Corporate Travel</h5>
@@ -152,59 +167,185 @@
       <!-- Portfolio Section -->
       <section id="portfolio" class="portfolio-section py-5 bg-light">
         <div class="container">
-          <h2 class="text-center mb-5">Our Portfolio</h2>
+          <h2 class="text-center mb-5">Our Fleet</h2>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <div class="col">
               <div class="card">
+                <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/crysta.jpg" alt="Compact Car" class="car-image img-fluid mb-2" />
                 <div class="card-body">
-                  <h5 class="card-title">Innova Crysta</h5>
-                  <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/crysta.jpg" alt="Compact Car" class="car-image img-fluid mb-2" />
-                  <p class="card-text">From INR 4000</p>
+                  <h5 class="card-title m-0">Innova Crysta</h5>
+                  <p class="card-text m-0">Seat Capacity : 7</p>
+                  <div class="mt-3">
+                    <p class="m-0">Pricing</p>
+                    <table class="price-table">
+                      <tr>
+                        <th>Package</th>
+                        <th>Rent</th>
+                      </tr>
+                      <tr>
+                        <td>Below 300 KM</td>
+                        <td>₹16/km + ₹2600/day</td>
+                      </tr>
+                      <tr>
+                        <td>Above 300 KM</td>
+                        <td>₹22/km only + (No Rent)</td>
+                      </tr>
+                      <tr>
+                        <td>Hour Package</td>
+                        <td>₹4000 (Incl. of 8 hours & 80 km)</td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
+                <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/hycross.jpeg" alt="Compact Car" class="car-image img-fluid mb-2" />
                 <div class="card-body">
-                  <h5 class="card-title">Maruti Dzire</h5>
-                  <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/dzire.png" alt="Economy Car" class="car-image img-fluid mb-2" />
-                  <p class="card-text">From INR 2600</p>
+                  <h5 class="card-title m-0">Innova Hycross</h5>
+                  <p class="card-text m-0">Seat Capacity : 7</p>
+                  <div class="mt-3">
+                    <p class="m-0">Pricing</p>
+                    <table class="price-table">
+                      <tr>
+                        <th>Package</th>
+                        <th>Rent</th>
+                      </tr>
+                      <tr>
+                        <td>Below 300 KM</td>
+                        <td>₹18/km + ₹3000/day</td>
+                      </tr>
+                      <tr>
+                        <td>Above 300 KM</td>
+                        <td>₹26/km only + (No Rent)</td>
+                      </tr>
+                      <tr>
+                        <td>Hour Package</td>
+                        <td>₹4500 (Incl. of 8 hours & 80 km)</td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
+                <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/innova.jpg" alt="Compact Car" class="car-image img-fluid mb-2" />
                 <div class="card-body">
-                  <h5 class="card-title">Toyota Etios</h5>
-                  <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/etios.png" alt="Midsize Car" class="car-image img-fluid mb-2" />
-                  <p class="card-text">From INR 2600</p>
+                  <h5 class="card-title m-0">Innova</h5>
+                  <p class="card-text m-0">Seat Capacity : 7</p>
+                  <div class="mt-3">
+                    <p class="m-0">Pricing</p>
+                    <table class="price-table">
+                      <tr>
+                        <th>Package</th>
+                        <th>Rent</th>
+                      </tr>
+                      <tr>
+                        <td>Below 300 KM</td>
+                        <td>₹12/km + ₹2200/day</td>
+                      </tr>
+                      <tr>
+                        <td>Above 300 KM</td>
+                        <td>₹18/km only + (No Rent)</td>
+                      </tr>
+                      <tr>
+                        <td>Hour Package</td>
+                        <td>₹3200 (Incl. of 8 hours & 80 km)</td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
+                <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/dzire.webp" alt="Compact Car" class="car-image img-fluid mb-2" />
                 <div class="card-body">
-                  <h5 class="card-title">Tavera</h5>
-                  <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/tavera.png" alt="Full-size Car" class="car-image img-fluid mb-2" />
-                  <p class="card-text">From INR 3000</p>
+                  <h5 class="card-title m-0">Dzire</h5>
+                  <p class="card-text m-0">Seat Capacity : 5</p>
+                  <div class="mt-3">
+                    <p class="m-0">Pricing</p>
+                    <table class="price-table">
+                      <tr>
+                        <th>Package</th>
+                        <th>Rent</th>
+                      </tr>
+                      <tr>
+                        <td>Below 300 KM</td>
+                        <td>₹10/km + ₹1600/day</td>
+                      </tr>
+                      <tr>
+                        <td>Above 300 KM</td>
+                        <td>₹14/km only + (No Rent)</td>
+                      </tr>
+                      <tr>
+                        <td>Hour Package</td>
+                        <td>₹2600 (Incl. of 8 hours & 80 km)</td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
+                <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/tour-12.png" alt="Compact Car" class="car-image img-fluid mb-2" />
                 <div class="card-body">
-                  <h5 class="card-title">Tempo Traveller AC</h5>
-                  <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/tempo1.png" alt="Luxury Car" class="car-image img-fluid mb-2" />
-                  <p class="card-text">From INR 4500</p>
+                  <h5 class="card-title m-0">Traveller Van</h5>
+                  <p class="card-text m-0">Seat Capacity : 12</p>
+                  <div class="mt-3">
+                    <p class="m-0">Pricing</p>
+                    <table class="price-table">
+                      <tr>
+                        <th>Package</th>
+                        <th>Rent</th>
+                      </tr>
+                      <tr>
+                        <td>Below 350 KM</td>
+                        <td>₹18/km + ₹2800/day</td>
+                      </tr>
+                      <tr>
+                        <td>Above 350 KM</td>
+                        <td>₹23/km only + (No Rent)</td>
+                      </tr>
+                      <tr>
+                        <td>Hour Package</td>
+                        <td>₹4500 (Incl. of 8 hours & 80 km)</td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
+                <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/tour-18.webp" alt="Compact Car" class="car-image img-fluid mb-2" />
                 <div class="card-body">
-                  <h5 class="card-title">Tempo Traveller AC</h5>
-                  <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/tempo2.png" alt="Van" class="car-image img-fluid mb-2" />
-                  <p class="card-text">From INR 4500</p>
+                  <h5 class="card-title m-0">Traveller Van</h5>
+                  <p class="card-text m-0">Seat Capacity : 18</p>
+                  <div class="mt-3">
+                    <p class="m-0">Pricing</p>
+                    <table class="price-table">
+                      <tr>
+                        <th>Package</th>
+                        <th>Rent</th>
+                      </tr>
+                      <tr>
+                        <td>Below 350 KM</td>
+                        <td>₹12/km + ₹3800/day</td>
+                      </tr>
+                      <tr>
+                        <td>Above 350 KM</td>
+                        <td>₹29/km only + (No Rent)</td>
+                      </tr>
+                      <tr>
+                        <td>Hour Package</td>
+                        <td>₹4500 (Incl. of 8 hours & 80 km)</td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -397,8 +538,8 @@
 
       <!-- contact us -->
       <section id="contact" class="contact-section py-5 bg-white">
-        <div class="container">
-          <h2 class="text-center mb-5">Contact Us</h2>
+        <div id="contact-content" class="container">
+          <h2 class="text-center mb-5">Locate Us</h2>
           <div class="row">
             <div class="col-12 col-lg-5">
               <div class="info-wrap">
@@ -426,7 +567,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-7 py-3 py-lg-0">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52883.56255556824!2d78.05592197626154!3d9.88436290676135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x49353b3fd235e095%3A0x93a2f5c33685add1!2sMadurai%20Dhaksha%20Tours%20%26%20Travels!5e0!3m2!1sen!2sin!4v1726921783760!5m2!1sen!2sin"
                 frameborder="0"
@@ -442,12 +583,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-4">
+    <footer class="footer primary-background text-white py-4">
       <div class="container text-center">
-        <p>&copy; 2025 Dhaksha Tours And Travels. All Rights Reserved.</p>
+        ©2024 Copyright Madurai Dhaksha Tours and Travels.&nbsp;All Rights Reserved.&nbsp;Made with ❤️ by
+        <a href="https://github.com/balangurumurthi" target="_blank"><u>Balan Gurumurthi</u></a>
       </div>
     </footer>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4c10cac4b4.js" crossorigin="anonymous"></script>
 
@@ -464,6 +608,35 @@
       gtag("js", new Date());
 
       gtag("config", "AW-11470718315");
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).on("scroll", function () {
+          if ($(window).scrollTop() >= 50) {
+            $("#navbar").addClass("primary-background navbar-border");
+          } else {
+            $("#navbar").removeClass("primary-background navbar-border");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("#navbarNav").on("show.bs.collapse", function () {
+          // is mobile device?
+          if ($(window).width() < 992) {
+            $("#navbar").addClass("primary-background");
+          }
+        });
+
+        $("#navbarNav").on("hide.bs.collapse", function () {
+          if ($(window).width() < 992 && $(window).scrollTop() <= 50) {
+            $("#navbar").removeClass("primary-background");
+          }
+        });
+      });
     </script>
   </body>
 </html>
