@@ -6,13 +6,15 @@
   --app-accent-color: #8246AF;
   --app-light-color: #f9f9f9;
   --app-white-color: #ffffff;
-  
+  --app-black-color: #000000;
+  --app-light-blue: #c9d9f2;
+  --app-light-secondary: #d6f2f0;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: #212529;
+  color: var(--app-black-color);
   background-color: #ffffff;
 }
 
@@ -29,20 +31,37 @@ h6 {
 .fs-small {
   font-size: 0.75rem;
 }
-a {
-  color: #eb5d1e;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+
 
 a:hover {
   color: #ff6a3a;
 }
 
-/* Header */
+.top-bar {
+  height: 40px;
+  background-color: #333;
+  color: white;
+  display: flex;  
+  align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+  width: 100%;
+}
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.top-bar a:hover {
+  text-decoration: underline;
+}
+
 #main-header {
-  /* background-color: var(--app-primary-color); */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  height: 120px;
+}
+/* navbar */
+#navbar {
+  /* height: 118px; */
 }
 
 .custom-toggler {
@@ -83,8 +102,8 @@ a:hover {
 .home-section {
   /* background-color: #fffaf8; */
   text-align: center;
-  padding: 60px 0;
-  height: 100vh;
+  /* padding: 60px 0; */
+  height: calc(100vh - 120px);
 }
 
 .background-image {
@@ -126,6 +145,11 @@ a:hover {
 .services-section {
   background-color: #fffaf8;
   padding: 60px 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/our-service.webp');
 }
 
 .card {
@@ -139,7 +163,7 @@ a:hover {
 
 /* Footer */
 .footer {
-  background-color: #060606;
+  background-color: var(--app-primary-color);
   color: #ffffff;
   text-align: center;
   padding: 20px 0;
@@ -156,8 +180,29 @@ a:hover {
 
 /* Contact Section */
 .contact-section {
+  position: relative;
   background-color: #f9f9f9;
   padding: 60px 0;
+  min-height: 100vh;
+  background: url('../img/contact.webp') no-repeat center center/cover;;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.contact-section #contact-content {
+  z-index: 2;
 }
 
 .contact-section h2 {
@@ -165,6 +210,7 @@ a:hover {
   font-weight: 700;
   margin-bottom: 40px;
   text-align: center;
+  color: var(--app-white-color);
 }
 
 .contact-section .info-wrap {
@@ -180,9 +226,14 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.info-item a {
+  text-decoration: none;
+  color: var(--app-secondary-color);
+}
+
 .contact-section .info-item i {
   font-size: 24px;
-  color: #eb5d1e;
+  color: var(--app-primary-color);
   margin-right: 15px;
 }
 
@@ -217,7 +268,7 @@ a:hover {
 }
 
 .pricing-section .table th {
-  background-color: #eb5d1e;
+  background-color: var(--app-primary-color);
   color: #ffffff;
   text-align: center;
   padding: 15px;
@@ -228,10 +279,25 @@ a:hover {
   padding: 10px;
 }
 
+.price-table {
+  width: 100%;
+  text-align: center;
+  background-color: var(--app-light-secondary);
+}
+
+.price-table th {
+  color: var(--app-primary-color);
+}
+
+.price-table , .price-table td , .price-table th, .price-table tr {
+  border: 1px solid var(--app-primary-color);
+}
+
 /* Portfolio Section */
 .portfolio-section {
   background-color: #f4f4f4;
   padding: 60px 0;
+  min-height: 100vh;
 }
 
 .portfolio-section h2 {
@@ -274,6 +340,11 @@ a:hover {
 .faq-section {
   background-color: #f9f9f9;
   padding: 60px 0;
+  background-image: url('../img/faq.webp');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .faq-section h2 {
@@ -283,15 +354,16 @@ a:hover {
 }
 
 .faq-section .accordion-button {
-  background-color: #f8f9fa;
-  color: black;
+  /* background-color: #f8f9fa; */
+  background-color: var(--app-primary-color);
+  color: var(--app-white-color);
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s;
   padding: 5px 10px;
 }
 
 .faq-section .accordion-button:not(.collapsed) {
-  background-color: #eb5d1e;
+  background-color: var(--app-accent-color);
   color: #ffffff;
 }
 
@@ -351,7 +423,7 @@ a:hover {
   font-size: 1rem;
 }
 #portfolio .car-image {
-  max-height: 150px;
+  height: 250px;
   object-fit: contain;
 }
 #portfolio .icon-row {
@@ -385,13 +457,24 @@ a:hover {
 
 @media (max-width: 768px) {
 
+  .top-bar {
+    height: 85px;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
   .logo-title {
     padding: 5px 10px;
     border-radius: 5px;
   }
   
   .logo-title .company {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand img {
+    margin: 0 !important;
+    height: 50px !important;
   }
   
 }
