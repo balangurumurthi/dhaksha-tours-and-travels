@@ -71,17 +71,23 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- Custom Styles -->
-    <link href="https://www.maduraidhakshatoursandtravels.com/assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header with Bootstrap Navbar -->
     <header id="main-header" class="sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand d-flex align-items-center" href="https://www.maduraidhakshatoursandtravels.com/">
-            <img src="https://www.maduraidhakshatoursandtravels.com/assets/img/logo.png" alt="Madurai Dhaksha Tours And Travels Logo" height="70" class="me-2" />
-            <span class="fw-bold">Madurai Dhaksha Tours And Travels</span>
-          </a>
+          <div class="logo-title">
+            <a class="navbar-brand d-flex align-items-center" href="https://www.maduraidhakshatoursandtravels.com/">
+              <img src="./assets/img/logo-1.png" alt="Madurai Dhaksha Tours And Travels Logo" height="70" class="me-2" />
+            </a>
+            <div class="d-flex flex-column">
+              <span class="fw-bold company">Madurai Dhaksha</span>
+              <span class="description"> Tours And Travels</span>
+              <p class="m-0 fs-small text-white">GSTIN 33EFGPK1043J1ZO</p>
+            </div>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -94,8 +100,7 @@
               <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#contact">Contact</a></li>
             </ul>
             <div class="d-flex align-items-center flex-column ms-0 ms-md-3 flex-wrap align-content-start">
-              <a href="tel:9943783232" class="btn btn-primary">Call: 9943783232</a>
-              <p class="m-0 fs-small">GSTIN:33EFGPK1043J1ZO</p>
+              <a href="tel:9943783232" class="btn btn-primary">Call: 9943783232</a>              
             </div>
           </div>
         </div>
@@ -105,11 +110,13 @@
     <!-- Home Section -->
     <main>
       <section id="home" class="home-section py-5 text-center">
-        <div class="container">
+        <img src="./assets/img/home.png" class="background-image" alt="Background" />
+        <!-- <div class="container">
           <h1 class="display-5">Madurai's Best Car Tours and Travels</h1>
           <p class="lead">Experience hassle-free travel with our premium services.</p>
-          <a href="tel:9943783232" class="btn btn-lg btn-success">Book Now</a>
-        </div>
+          
+        </div> -->
+        <!-- <a href="tel:9943783232" class="btn btn-lg btn-success book-now-button">Book Now</a> -->
       </section>
 
       <!-- Services Section -->
@@ -448,6 +455,8 @@
       </div>
     </footer>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4c10cac4b4.js" crossorigin="anonymous"></script>
 
@@ -464,6 +473,19 @@
       gtag("js", new Date());
 
       gtag("config", "AW-11470718315");
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).on("scroll", function () {
+          if ($(window).scrollTop() >= 50) {
+            console.log('hi')
+            $("#main-header").addClass("primary-background");
+          } else {
+            $("#main-header").removeClass("primary-background");
+          }
+        });
+      });
     </script>
   </body>
 </html>
