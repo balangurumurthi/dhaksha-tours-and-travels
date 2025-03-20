@@ -88,7 +88,7 @@
               <p class="m-0 fs-small text-white">GSTIN 33EFGPK1043J1ZO</p>
             </div>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="custom-toggler navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -100,7 +100,7 @@
               <li class="nav-item"><a class="nav-link" href="https://www.maduraidhakshatoursandtravels.com/#contact">Contact</a></li>
             </ul>
             <div class="d-flex align-items-center flex-column ms-0 ms-md-3 flex-wrap align-content-start">
-              <a href="tel:9943783232" class="btn btn-primary">Call: 9943783232</a>              
+              <a href="tel:9943783232" class="btn btn-primary">Call: 9943783232</a>
             </div>
           </div>
         </div>
@@ -479,13 +479,30 @@
       $(document).ready(function () {
         $(window).on("scroll", function () {
           if ($(window).scrollTop() >= 50) {
-            console.log('hi')
-            $("#main-header").addClass("primary-background");
+            $("#main-header").addClass("primary-background navbar-border");
           } else {
+            $("#main-header").removeClass("primary-background navbar-border");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("#navbarNav").on("show.bs.collapse", function () {
+          // is mobile device?
+          if ($(window).width() < 992) {
+            $("#main-header").addClass("primary-background");
+          }
+        });
+
+        $("#navbarNav").on("hide.bs.collapse", function () {
+          if ($(window).width() < 992 &&  ($(window).scrollTop() <= 50) ) {
             $("#main-header").removeClass("primary-background");
           }
         });
       });
     </script>
+
   </body>
 </html>

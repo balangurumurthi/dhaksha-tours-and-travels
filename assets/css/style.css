@@ -1,11 +1,12 @@
 /* Global Styles */
 :root {
    /*  */
-  --app-primary-color: #E26F55;
-  --app-secondary-color: #2A9D8F;
+  --app-primary-color: #283275;  
+  --app-secondary-color: #5cb8b2;
+  --app-accent-color: #8246AF;
   --app-light-color: #f9f9f9;
   --app-white-color: #ffffff;
-  --app-navy-color: #264653;
+  
 }
 
 body {
@@ -44,6 +45,18 @@ a:hover {
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
+.custom-toggler {
+  border-color: rgba(255,255,255,.1) !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.navbar-border {
+  border-bottom: solid 5px var(--app-secondary-color);
+}
 .primary-background {
   background-color: var(--app-primary-color);
 }
